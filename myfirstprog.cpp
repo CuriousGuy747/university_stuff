@@ -1,9 +1,10 @@
 #include <iostream>
+
 using namespace std;
 int main() {
   cout<<"Hello World!\n"<<endl;
-  int a;
-  int b = 13;
+  var int a;
+  const int b = 13;
 
   //some code here
   // cout - console output
