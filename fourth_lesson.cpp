@@ -137,5 +137,12 @@ int main() {
   // }
 
   // problem11
-
+  int number12, number13;
+  cout << "Enter a number: ";
+  cin >> number12 >> number13;
+  if (number12 % number13 == 0) {
+    cout << number12 <<" is divisible by "<< number13 << endl;
+  }else {
+    cout << number12 <<" is not divisible by "<< number13 << endl;
+  }
 }
