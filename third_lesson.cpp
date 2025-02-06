@@ -162,15 +162,52 @@ int main() {
   // cout <<"Tax percantage: "<< tax_rate << endl <<"Core salary: " << salary << endl << "Salary after tax: "<< salary_after_tax << endl;
 
   // problem15
-  float original_price;
-  int discount;
-  cout << "Please enter the price: ";
-  cin >> original_price;
-  cout << "Please enter the discount: ";
-  cin >> discount;
-  float discount_amount = original_price * (discount/100);
-  float discount_price = original_price - original_price * (discount/100);
-  cout << "Discount amount is: " << discount_amount << endl;
-  cout << "Final price is: " << discount_price << endl;
+  // float original_price;
+  // float discount;
+  // cout << "Please enter the price: ";
+  // cin >> original_price;
+  // cout << "Please enter the discount: ";
+  // cin >> discount;
+  // float discount_amount = original_price * (discount/100);
+  // float discount_price = original_price - discount_amount;
+  // cout << "Discount amount is: " << discount_amount << endl;
+  // cout << "Final price is: " << discount_price << endl;
+
+  // problem16
+  // float gp1, gp2, gp3, gp4, gp5;
+  // cout << "Enter GPA with space between: ";
+  // cin >> gp1 >> gp2 >> gp3 >> gp4 >> gp5;
+  // int ch1, ch2, ch3, ch4, ch5;
+  // cout << "Enter Credit hours with space between: ";
+  // cin>>ch1>>ch2>>ch3>>ch4>>ch5;
+  //
+  // float weighted_gpa = ((gp1 * ch1) + (gp2 * ch2) + (gp3 * ch3) + (gp4 * ch4) + (gp5 * ch5)) / (ch1 + ch2 + ch3 + ch4 + ch5);
+  // cout << "Weighted GPA is: " << weighted_gpa << endl;
+
+  // problem17
+  // float initial_price;
+  // cout << "Enter initial price: ";
+  // cin >> initial_price;
+  // float final_price;
+  // cout << "Enter final price: ";
+  // cin >> final_price;
+  // float inflation_rate = (final_price - initial_price) / initial_price;
+  // if (inflation_rate > 0) {
+  //   cout << "Inflation rate: " << inflation_rate * 100 << "%" << endl;
+  // }else if (inflation_rate < 0) {
+  //   cout << "Deflation rate: " << inflation_rate * 100 << "%" << endl;
+  // }
+
+  // problem18
+  int original_tuition;
+  cout<<"Enter original tuition fee: ";
+  cin>>original_tuition;
+  float scholarship_rate;
+  cout<<"Enter scholarship rate: ";
+  cin>>scholarship_rate;
+  double scholarship_amount = (scholarship_rate/100) * original_tuition;
+  cout << "Scholarship amount: " << scholarship_amount << endl;
+  double final_scholarship_amount= original_tuition - scholarship_amount;
+  cout << "Final scholarship amount: " << final_scholarship_amount;
 }
 
