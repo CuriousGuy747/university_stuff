@@ -137,4 +137,16 @@ int main() {
   // }
 
   // problem11
+  // int a, b, c;
+  // cout << "Enter four numbers separated by space:" << endl;
+  // cin >> a >> b >> c;
+  // int sum = a + b + c;
+  // if (sum > 180) {
+  //   cout << "Triangle is invalid" << endl;
+  // }else {
+  //   cout << "Triangle is valid" << endl;
+  // }
+
+  // problem12
+
 }
