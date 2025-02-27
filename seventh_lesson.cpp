@@ -14,6 +14,24 @@ int calculateFine(int hours, int fine) {
 int calculateSum(int price, int quantity) {
   return price * quantity;
 }
+bool hasUpper = false;
+bool hasLower = false;
+bool hasDigit = false;
+bool hasSpecial = false;
+bool checkPassword(string password) {
+  for (char ch : password) {
+    if (isupper(ch)) {
+      hasUpper = true;
+    }else if(islower(ch)) {
+      hasLower = true;
+    }else if(isdigit(ch)) {
+      hasDigit = true;
+    }else if (isalnum(ch)) {
+      hasSpecial = true;
+    }
+  }
+  return hasUpper && hasLower && hasDigit && hasSpecial;
+}
 
 
 int main() {
@@ -216,5 +234,27 @@ int main() {
 
 
   // problem6
+    string password;
+    cout << "Enter password: ";
+    cin >> password;
+    if (password.length() <= 8) {
+      cout << "Password is too short" << endl;
+    }else {
+      if (checkPassword(password)) {
+        cout << "Strong Password" << endl;
+      }else if (!hasUpper) {
+        cout << "Password should have at least one uppercase" << endl;
+      }else if (!hasLower) {
+        cout << "Password should have at least one lowercase" << endl;
+      }else if (!hasDigit) {
+        cout << "Password should have at least one digit" << endl;
+      }else if (!hasSpecial) {
+        cout << "Password should have at least one special" << endl;
+      }
+    }
 
-}
+  // problem7
+
+  }
+
+

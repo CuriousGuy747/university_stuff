@@ -14,7 +14,7 @@ int main() {
     // }
 
     // problem2
-   int count = 0, num = 2;
+   // int count = 0, num = 2;
     // cout << "First 10 prime nums" <<endl;
     // for (; count < 10; num++) {
     //     bool isPrime = true;
@@ -64,15 +64,15 @@ int main() {
     // }
 
     // problem4
-    // int nummy = 0;
-    // cout<<"Please input number: ";
-    // cin>>nummy;
-    // int counter = 0;
-    // while (nummy > 0 ) {
-    //     nummy = nummy/10;
-    //     count++;
-    // }
-    // cout << count << endl;
+    int nummy = 0;
+    cout<<"Please input number: ";
+    cin>>nummy;
+    int counter = 0;
+    while (nummy > 0 ) {
+        nummy = nummy/10;
+        counter++;
+    }
+    cout << counter << endl;
 
     // problem5
     // int num_num = 0;
@@ -86,13 +86,13 @@ int main() {
     // }
 
     // problem6
-    int num1 = 0, num2 = 0;
-    cout<<"Please input num1 num2: ";
-    cin >> num1;
-    cin >> num2;
-    while (num1 != 0 && num2 != 0) {
-        if (num1 == 0)
-            return num2;
-        return num2 % num1, num1;
-    }
+    // int num1 = 0, num2 = 0;
+    // cout<<"Please input num1 num2: ";
+    // cin >> num1;
+    // cin >> num2;
+    // while (num1 != 0 && num2 != 0) {
+    //     if (num1 == 0)
+    //         return num2;
+    //     return num2 % num1, num1;
+    // }
 }
